@@ -203,7 +203,7 @@ export default {
 					else return new Response(await nginx(), {
 						status: 200,
 						headers: {
-							'content-type': 'application/json',
+							'Content-Type': 'text/html; charset=UTF-8',
 						},
 					});
 				} else if (路径 == `/${fakeUserID}`) {
